@@ -7,18 +7,22 @@ import { ToDoInput } from './components/TodoInput'
 
 function App() {
   const [count, setCount] = useState(0)
-  let x = 3
+  const todos = [
+    {input: 'Hello! Add your first todo!', complete : true},
+    {input: 'Practice daily leetcode!', complete: false },
+    {input: 'Study System Design!', complete: false},
+    {input: 'Go to the gym!', complete: true }
+
+  ] 
+
   return (
-      <div>
-        <Header />
-        <Tabs />
-        <ToDoList />
-        <ToDoInput />
+      <>
+        <Header todos={todos} />
+        <Tabs todos={todos} />
+        <ToDoList todos={todos} />
+        <ToDoInput todos={todos} />
 
-
-
-
-      </div>
+      </>
 
 
   )
