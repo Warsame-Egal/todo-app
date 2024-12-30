@@ -1,4 +1,94 @@
+/* index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* === Global Styling === */
+body {
+  @apply bg-gradient-to-r from-blue-100 via-white to-blue-100 min-h-screen text-gray-900 font-sans;
+  font-family: 'Inter', sans-serif; /* Add Inter or other modern fonts */
+}
+
+/* === Header Styling === */
+header {
+  @apply flex justify-between items-center p-6 bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg rounded-b-xl;
+}
+header h1 {
+  @apply text-white text-3xl font-semibold tracking-wide drop-shadow-md;
+}
+
+/* === Tab Navigation === */
+.tab-container {
+  @apply flex justify-center space-x-4 my-6;
+}
+
+.tab-button {
+  @apply px-6 py-2 text-base font-medium text-gray-700 bg-gray-200 rounded-full shadow-md hover:bg-indigo-500 hover:text-white transition-all duration-300 ease-in-out;
+}
+
+.tab-selected {
+  @apply bg-blue-600 text-white font-bold shadow-lg hover:shadow-xl;
+}
+
+/* === ToDo Cards === */
+.card {
+  @apply flex justify-between items-center p-5 my-4 bg-white rounded-xl shadow-md hover:shadow-lg border border-gray-200 transition-shadow duration-300;
+}
+
+.card:hover {
+  @apply bg-indigo-50;
+}
+
+.todo-item p {
+  @apply text-gray-800 flex-grow truncate text-lg font-medium;
+}
+
+.todo-buttons button {
+  @apply mx-2 px-4 py-2 text-sm rounded-full shadow-md transition-all duration-300 ease-in-out;
+}
+
+.todo-buttons .done-button {
+  @apply bg-green-500 text-white hover:bg-green-600 hover:scale-105;
+}
+
+.todo-buttons .delete-button {
+  @apply bg-red-500 text-white hover:bg-red-600 hover:scale-105;
+}
+
+/* === Input Styling === */
+.input-container {
+  @apply flex items-center p-5 bg-gray-50 rounded-lg shadow-inner border border-gray-200;
+}
+
+.input-container input {
+  @apply flex-grow px-4 py-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring focus:ring-blue-200 transition duration-300;
+}
+
+.input-container button {
+  @apply ml-4 px-6 py-3 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out;
+}
+
+/* === Button Styling Enhancements === */
+button {
+  font-family: 'Inter', sans-serif;
+  @apply font-medium tracking-wide;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  header h1 {
+    @apply text-2xl;
+  }
+  .tab-button {
+    @apply px-4 py-2 text-sm;
+  }
+  .input-container input {
+    @apply px-3 py-2 text-sm;
+  }
+  .input-container button {
+    @apply px-4 py-2 text-sm;
+  }
+  .todo-item p {
+    @apply text-base;
+  }
+}
