@@ -1,8 +1,25 @@
-# React + Vite
+A simple and responsive To-Do app built with React and Vite, showcasing modern web development practices. The app is deployed using Netlify.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo
+Click [Live Demo](https://677b341eb260b55530be5084--bright-brioche-3f1c8b.netlify.app/) to view the app
 
-Currently, two official plugins are available:
+Features
+Add, complete, and delete tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technology Stack
+Frontend: React + Vite
+Deployment: Netlify
+
+Getting Started
+
+Clone the repository:
+git clone https://github.com/your-username/todo-app.git
+cd todo-app
+
+Install dependencies:
+npm install
+
+Start the development server:
+npm run dev
+
+Open your browser at http://localhost:5173.
